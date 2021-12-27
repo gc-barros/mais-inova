@@ -1,0 +1,76 @@
+.rodape {
+    background-color: var(--preto);
+    color: #C3CBCD;
+    text-align: center;
+    padding: 32px 16px;
+    font-size: 12px;
+    background-image: 
+        url(../../assets/img/inova\ logo\ 1.png), 
+        url(../../assets/img/LOGO-GOVERMO-MARANHAO-2021\ 1.png);
+    background-repeat: no-repeat;
+    background-position: 
+        right 80px bottom 130px,
+        right 80px bottom 70px;
+}
+
+.rodape__tech {
+    font-weight: 800;
+}
+
+.rodape__intro {
+    margin-bottom: 24px;
+}
+
+.rodape__membro {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+    transition: .3s ease all;
+}
+
+
+.rodape__membro::before {
+    content: url(../../assets/img/linkedin.svg);
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.rodape__membro > a {
+    color: #C3CBCD;
+    text-decoration: none;
+    transition: .3s ease all;
+}
+
+.rodape__membro:hover > a {
+    color: var(--branco);
+}
+
+.rodape__equipe {
+    display: flex;
+    max-width: 512px;
+    margin: auto;
+    justify-content: space-between;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1023px) {
+    .rodape {
+        background: var(--preto);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .rodape {
+        font-size: 10px;
+        padding-right: 12px;
+        padding-left: 12px;
+
+    }
+
+    .rodape__tech {
+        display: inline-block;
+        max-width: 64px;
+        line-height: 16px;
+    }
+}
