@@ -19,12 +19,15 @@
     align-items: center;
 }
 
-.cabecalho__menu--item {
+.cabecalho__menu > li {
     margin-left: 60px;
     font-weight: 600;
     font-size: 18px;
+}
+
+.cabecalho__menu--item {
+    text-decoration: none;
     color: var(--verde-escuro);
-    cursor: pointer;
     transition: .6s ease all;
 }
 
@@ -46,9 +49,17 @@
 .cabecalho__hamburguer {
     display: none;
     width: 22px;
-    height: 13px;
+    height: 14px;
+    border: none;
+    background-color: transparent;
+    padding: 4px;
     background: url(../img/hamburguer.svg) no-repeat center / cover;
     cursor: pointer;
+    box-sizing: border-box;
+}
+
+.cabecalho__close {
+    display: none;
 }
 
 @media screen and (max-width: 1023px) {
@@ -62,6 +73,70 @@
 
     .cabecalho__menu {
         display: none;
+        padding-top: 38px;
+        padding-bottom: 28px;
+        background-color: var(--branco);
+        position: fixed;
+        right: 20px;
+        top: 28px;
+        flex-direction: column;
+        border-radius: 10px;
+        z-index: 10;
+        width: 217px;
+        box-sizing: border-box;
+    }
+
+    .cabecalho__close {
+        background: url(../img/close-line.svg) no-repeat center / cover;
+        border: none;
+        display: block;
+        height: 28px;
+        width: 28px;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        padding: 4px;
+    }
+
+    .cabecalho__menu > li {
+        margin: 0;
+        margin-top: 12px;
+    }
+
+    .cabecalho__menu--item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        /* padding: 10px; */
+        width: 142px;
+        height: 37px;
+        box-sizing: border-box;
+        border: 2px solid #F4F4F4;
+        border-radius: 10px;
+    }
+
+    .cabecalho__menu--item-teste {
+        border: 2px solid var(--verde-claro);
+    }
+
+    .cabecalho__menu.cabecalho__menu--ativo {
+        display: flex;
+    }  
+
+    .overlay {
+        display: none;
+        background-color: rgba(0, 0, 0, 0.2);
+        position: fixed;
+        z-index: 9;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .overlay-ativo {
+        display: block;
     }
     
 }

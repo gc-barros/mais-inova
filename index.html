@@ -19,15 +19,30 @@
     <header class="cabecalho">
         <img src="assets/img/logo.png" alt="Logo +inova" class="cabecalho__logo">
         <nav class="cabecalho__navegacao">
-            <div class="cabecalho__hamburguer"></div>
-            <ul class="cabecalho__menu">
-                <li class="cabecalho__menu--item cabecalho__menu--item-ativo">ESG</li>
-                <li class="cabecalho__menu--item">Mercado</li>
-                <li class="cabecalho__menu--item">Notícias</li>
-                <li class="cabecalho__menu--item">Perfis</li>
-                <li class="cabecalho__menu--item cabecalho__menu--item-teste">Fazer o teste</li>
+            <button class="cabecalho__hamburguer" aria-label="Menu lateral" title="Menu lateral" data-hamburguer></button>
+            <ul class="cabecalho__menu" data-menu>
+                <li>
+                    <button class="cabecalho__close" aria-label="Fechar menu lateral" title="Fechar menu lateral" data-close-menu></button>
+                </li>
+                <li>
+                    <a href="#" class="cabecalho__menu--item cabecalho__menu--item-ativo">ESG</a>
+                </li>
+                <li>
+                    <a href="#" class="cabecalho__menu--item">Mercado</a>
+                </li>
+                <li>
+                    <a href="#" class="cabecalho__menu--item">Notícias</a>
+                </li>
+                <li>
+                    <a href="#" class="cabecalho__menu--item">Perfis</a>
+                </li>
+                <li>
+                    <a href="#" class="cabecalho__menu--item cabecalho__menu--item-teste">Fazer o teste</a>
+                </li>
             </ul>
         </nav>
+        <!-- Overlay -->
+        <div class="overlay" data-overlay></div>
     </header>
 
     <!-- Conteúdo principal -->
@@ -44,13 +59,13 @@
                 <span class="rodape__tech">Cientistas de Dados</span>
                 <ul class="rodape__dados">
                     <li class="rodape__membro">
-                        <a href="#">Beatriz Brito</a>
+                        <a href="#" target="_blank" rel="noreferrer">Beatriz Brito</a>
                     </li>
                     <li class="rodape__membro">
-                        <a href="#">João M. Abreu</a>
+                        <a href="https://www.linkedin.com/in/abreujms" target="_blank" rel="noreferrer">João M. Abreu</a>
                     </li>
                     <li class="rodape__membro">
-                        <a href="#">Lucas Teixeira</a>
+                        <a href="#" target="_blank" rel="noreferrer">Lucas Teixeira</a>
                     </li>
                 </ul>
             </div>
@@ -59,13 +74,13 @@
                 <span class="rodape__tech">UX/UI Designers</span>
                 <ul class="rodape__dados">
                     <li class="rodape__membro">
-                        <a href="#">Karolina Lima</a>
+                        <a href="https://www.linkedin.com/in/karolina-lima-9a277a124/" target="_blank" rel="noreferrer">Karolina Lima</a>
                     </li>
                     <li class="rodape__membro">
-                        <a href="#">Lianna Ribeiro</a>
+                        <a href="http://linkedin.com/in/lianna-ribeiro-3366b9137/" target="_blank" rel="noreferrer">Lianna Ribeiro</a>
                     </li>
                     <li class="rodape__membro">
-                        <a href="#">Taís Ximenes</a>
+                        <a href="https://www.linkedin.com/in/tais-ximenes-43093a192" target="_blank" rel="noreferrer">Taís Ximenes</a>
                     </li>
                 </ul>
             </div>
@@ -74,27 +89,28 @@
                 <span class="rodape__tech">Programadores</span>
                 <ul class="rodape__dados">
                     <li class="rodape__membro">
-                        <a href="#">Carlos Felipe</a>
+                        <a href="#" target="_blank" rel="noreferrer">Carlos Felipe</a>
                     </li>
                     <li class="rodape__membro">
-                        <a href="#">Gabriel Barros</a>
+                        <a href="https://www.linkedin.com/in/gabriel-barros-526ab7127/" target="_blank" rel="noreferrer">Gabriel Barros</a>
                     </li>
                     <li class="rodape__membro">
-                        <a href="#">Johnny Lima</a>
+                        <a href="#" target="_blank" rel="noreferrer">Johnny Lima</a>
                     </li>
                     <li class="rodape__membro">
-                        <a href="#">Larissa Karoline</a>
+                        <a href="#" target="_blank" rel="noreferrer">Larissa Karoline</a>
                     </li>
                     <li class="rodape__membro">
-                        <a href="#">Lilia Rosa</a>
+                        <a href="#" target="_blank" rel="noreferrer">Lilia Rosa</a>
                     </li>
                     <li class="rodape__membro">
-                        <a href="#">Mateus Gomes</a>
+                        <a href="#" target="_blank" rel="noreferrer">Mateus Gomes</a>
                     </li>
                 </ul>
             </div>
         </div>
 
     </footer>
+    <script type="module" src="assets/js/main.js"></script>
 </body>
 </html>

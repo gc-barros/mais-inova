@@ -43,6 +43,7 @@
 
 .rodape__membro:hover > a {
     color: var(--branco);
+    text-decoration: underline;
 }
 
 .rodape__equipe {
@@ -63,9 +64,6 @@
 @media screen and (max-width: 767px) {
     .rodape {
         font-size: 10px;
-        padding-right: 12px;
-        padding-left: 12px;
-
     }
 
     .rodape__tech {
