@@ -9,6 +9,7 @@ function quizInit() {
     const barraDeProgresso = document.querySelector("[data-progressbar]");
     const loading = document.querySelector("[data-loading]");
     const conteudoPrincipal = document.querySelector("[data-principal]");
+    const quizBox = document.querySelector(".quiz__box");
     
     let pontuacaoDaQuestao = {iniciante: 0, moderado: 0, arrojado: 0};
     let pontuacaoFinal = {iniciante: 0, moderado: 0, arrojado: 0};
@@ -116,6 +117,7 @@ function quizInit() {
         // Finaliza o jogo se não houver mais questões.
         } else {
             atualizaProgresso(currentQuestion);
+            quizBox.style.opacity = 0.3;
             setTimeout(exibirLoading, 1000);
             setTimeout(analisarPerfil, 6000);
         }

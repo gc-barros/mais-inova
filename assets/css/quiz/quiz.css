@@ -16,6 +16,7 @@
     padding: 38px 104px 104px 104px;
     box-sizing: border-box;
     position: relative;
+    transition: .2s ease all;
 }
 
 .quiz__box::before {
