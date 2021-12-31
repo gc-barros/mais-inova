@@ -44,6 +44,7 @@
     padding: 10px 14px;
     border: 2px solid var(--verde-claro);
     border-radius: 15px;
+    box-sizing: border-box;
 }
 
 .cabecalho__hamburguer {
@@ -108,8 +109,7 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        /* padding: 10px; */
-        width: 142px;
+        width: 144px;
         height: 37px;
         box-sizing: border-box;
         border: 2px solid #F4F4F4;

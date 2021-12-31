@@ -1,0 +1,230 @@
+.quiz {
+    background-color: rgba(190, 190, 190, 0.06);
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    padding: 104px 24px 56px 24px;
+}
+
+.quiz__box {
+    border: 2px solid var(--verde-claro);
+    background: transparent;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 880px;
+    min-height: 506px;
+    padding: 38px 104px 104px 104px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.quiz__box::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: #f0f0f0;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    top: -24px;
+    left: -32px;
+    z-index: -1;
+}
+
+.quiz__pergunta {
+    margin-bottom: 0;
+    min-height: 80px;
+}
+
+.quiz__alternativas {
+    display: flex;
+    flex-direction: column;
+    padding-left: 8px;
+}
+
+.quiz__alternativa {
+    margin: 24px 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    min-height: 40px;
+}
+
+.quiz__alternativa > label {
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 22px;
+    margin-left: 56px;
+}
+
+.quiz__alternativa > input {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    opacity: 0;
+}
+
+.quiz__alternativa > .checkmark {
+    position: absolute;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    border: 2px solid #c3cbcd;
+    background-color: transparent;
+    border-radius: 100px;
+    transition: 0.4s ease all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.checkmark:after {
+    content: "";
+    display: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--verde-claro);
+}
+
+.quiz__alternativa input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.quiz__alternativa input:checked ~ .checkmark,
+.quiz__alternativa:hover input ~ .checkmark {
+    border-color: var(--verde-claro);
+}
+
+.quiz__botao {
+    border: none;
+    background: var(--verde-claro);
+    color: var(--branco);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: var(--mulish);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 105px;
+    height: 43px;
+    cursor: pointer;
+    position: absolute;
+    right: 132px;
+    bottom: 58px;
+    transition: 0.3s ease all;
+}
+
+.quiz__alerta {
+    visibility: hidden;
+    color: #e96060;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    bottom: -12px;
+}
+
+.quiz__alerta::before {
+    content: '';
+    background: url(../../img/quiz/alert-fill.svg) no-repeat center / contain;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: relative;
+    bottom: -2px;
+    margin-right: 8px;
+}
+
+.quiz__botao.quiz__botao--inativo {
+    opacity: 0.4;
+    background-color: var(--preto);
+}
+
+.quiz__botao:hover {
+    background: var(--verde-escuro);
+}
+
+.quiz__progress {
+    width: 100%;
+    max-width: 490px;
+    height: 12px;
+    background: #f0f0f0;
+    border-radius: 5px;
+    margin: 40px auto;
+}
+
+.quiz__progress-bar {
+    background: var(--verde-claro);
+    border-radius: 5px;
+    height: 12px;
+    width: 0%;
+    transition: 1s ease all;
+}
+
+@media screen and (max-width: 767px) {
+    .quiz {
+        padding-top: 40px;
+        padding-bottom: 88px;
+    }
+    .quiz__box {
+        border: none;
+        padding: 0;
+        min-height: 0;
+        justify-content: flex-end;
+    }
+
+    .quiz__box::before {
+        display: none;
+    }
+
+    .quiz__botao {
+        position: static;
+        float: right;
+        margin-top: 16px;
+        border-radius: 10px;
+    }
+
+    .quiz__alerta {
+        font-size: 12px;
+    }
+
+    .quiz__alternativas {
+        margin-top: 16px;
+    }
+
+    .quiz__alternativa {
+        margin: 13px 0;
+    }
+
+    .quiz__alternativa > label {
+        font-size: 12px;
+        margin-left: 36px;
+    }
+
+    .quiz__alternativa > .checkmark {
+        width: 19px;
+        height: 19px;
+    }
+
+    .checkmark:after {
+        width: 9px;
+        height: 9px;
+    }
+
+    .quiz__progress {
+        order: -1;
+    }
+
+    .quiz__alerta::before {
+        width: 16px;
+        height: 16px;
+        margin-right: 6px;
+    }
+}

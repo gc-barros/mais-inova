@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/cabecalho.css">
     <link rel="stylesheet" href="assets/css/rodape.css">
+    <link rel="stylesheet" href="assets/css/quiz/introducao.css">
+    <link rel="stylesheet" href="assets/css/quiz/quiz.css">
+    <link rel="stylesheet" href="assets/css/quiz/loading.css">
 </head>
 <body>
     <!-- Cabeçalho -->
@@ -27,7 +30,7 @@
                     <button class="cabecalho__close" aria-label="Fechar menu lateral" title="Fechar menu lateral" data-close-menu></button>
                 </li>
                 <li>
-                    <a href="#" class="cabecalho__menu--item cabecalho__menu--item-ativo">ESG</a>
+                    <a href="index.html" class="cabecalho__menu--item">ESG</a>
                 </li>
                 <li>
                     <a href="#" class="cabecalho__menu--item">Mercado</a>
@@ -39,18 +42,67 @@
                     <a href="#" class="cabecalho__menu--item">Perfis</a>
                 </li>
                 <li>
-                    <a href="quiz.html" class="cabecalho__menu--item cabecalho__menu--item-teste">Fazer o teste</a>
+                    <a href="quiz.html" class="cabecalho__menu--item cabecalho__menu--item-teste cabecalho__menu--item-ativo">Fazer o teste</a>
                 </li>
             </ul>
         </nav>
-    </header> 
-    
+    </header>
     <!-- Overlay -->
-        <div class="overlay display-none" data-overlay></div>
-    
+    <div class="overlay" data-overlay></div>
+
+    <div class="loading" data-loading>
+        <h3 class="loading__titulo">Só um minuto...</h3>
+        <p class="loading__texto">Estamos analisando o seu teste.</p>
+        <div class="loading__imagem">
+            <img src="assets/img/quiz/cofrinho 1.png" alt="Cofrinho" class="loading__cofrinho">
+            <img src="assets/img/quiz/Ellipse.png" class="loading__elipse">
+        </div>
+    </div>
+
     <!-- Conteúdo principal -->
-    <main class="principal" style="height: 40vh;">
-        <!-- Remover CSS inline depois -->
+    <main class="principal" data-principal>
+        <section class="introducao">
+            <div class="introducao__texto">
+                <h1 class="quiz__titulo">Qual o seu perfil de investidor?</h1>
+                <p class="introducao__descricao">Conhecer seu perfil de investidor é o primeiro passo para orientar a busca por ativos que combinem risco e rentabilidade para obtenção de seus objetivos financeiros.<br>
+                Faça o teste e descubra gratuitamente a aplicação ideal para você!</p>
+            </div>
+            <div class="introducao__ilustracao">
+                <img src="assets/img/quiz/ilustração quiz.svg" alt="">
+            </div>
+        </section>
+
+        <section class="quiz">
+            <div class="quiz__box">
+                <h2 class="quiz__pergunta quiz__titulo" data-question>Qual a sua experiência com investimentos?</h2>
+                <span class="quiz__alerta" data-alerta>Por favor, escolha uma alternativa para continuar!</span>
+                <div class="quiz__alternativas">
+                    <label class="quiz__alternativa" data-option="1">
+                        <input type="radio" id="iniciante" name="alternativa">
+                        <span class="checkmark"></span>
+                        <label for="iniciante" data-option-text="1">Nenhuma ou quase nada de experiência.</label>
+                    </label>
+    
+                    <label class="quiz__alternativa" data-option="2">
+                        <input type="radio" id="moderado" name="alternativa">
+                        <span class="checkmark"></span>
+                        <label for="moderado" data-option-text="2">Conheço alguns fundos de investimento.</label>
+                    </label>
+    
+                    <label class="quiz__alternativa" data-option="3">
+                        <input type="radio" id="arrojado" name="alternativa">
+                        <span class="checkmark"></span>
+                        <label for="arrojado" data-option-text="3">Escolho meus próprios investimentos e tenho ampla experiência no mercado.</label>
+                    </label>
+
+                </div>
+                <button class="quiz__botao quiz__botao--inativo" title="Avançar" data-botao-avancar>Avançar</button>
+            </div>
+
+            <div class="quiz__progress">
+                <div class="quiz__progress-bar" data-progressbar></div>
+            </div>
+        </section>
     </main>
 
     <!-- Rodapé -->
@@ -112,7 +164,8 @@
                 </ul>
             </div>
         </div>
+
     </footer>
-    <script type="module" src="assets/js/main.js"></script>
+    <script type="module" src="assets/js/quiz.js"></script>
 </body>
 </html>
