@@ -15,11 +15,14 @@
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/cabecalho.css">
     <link rel="stylesheet" href="assets/css/rodape.css">
+    <link rel="stylesheet" href="assets/css/quiz/introducao.css">
+    <link rel="stylesheet" href="assets/css/quiz/quiz.css">
+    <link rel="stylesheet" href="assets/css/quiz/loading.css">
 </head>
 <body>
     <!-- Cabeçalho -->
     <header class="cabecalho">
-        <a href="index.html" title="Ir para a página inicial"><img src="assets/img/logo.png" alt="Logo +inova" class="cabecalho__logo"></a>
+        <a href="index.html"><img src="assets/img/logo.png" alt="Logo +inova" class="cabecalho__logo"></a>
         <nav class="cabecalho__navegacao">
             <button class="cabecalho__hamburguer" aria-label="Menu lateral" title="Menu lateral" data-hamburguer></button>
             <ul class="cabecalho__menu" data-menu>
@@ -36,22 +39,30 @@
                     <a href="#" class="cabecalho__menu--item">Notícias</a>
                 </li>
                 <li>
-                    <a href="#" class="cabecalho__menu--item cabecalho__menu--item-ativo">Perfis</a>
+                    <a href="#" class="cabecalho__menu--item">Perfis</a>
                 </li>
                 <li>
-                    <a href="fazer-o-teste.html" class="cabecalho__menu--item cabecalho__menu--item-teste">Fazer o teste</a>
+                    <a href="quiz.html" class="cabecalho__menu--item cabecalho__menu--item-teste">Fazer o teste</a>
                 </li>
             </ul>
         </nav>
     </header>
-    
     <!-- Overlay -->
-    <div class="overlay display-none" data-overlay></div>
+    <div class="overlay" data-overlay></div>
 
     <!-- Conteúdo principal -->
-    <main class="principal" style="height: 40vh;">
-        <!-- Remover CSS inline depois -->
-        <h1 style="color: var(--verde-claro); text-align: center;">Perfil moderado!</h1>
+    <main class="principal" data-principal>
+        <section class="introducao">
+            <div class="introducao__texto">
+                <h1 class="quiz__titulo">Qual o seu perfil de investidor?</h1>
+                <p class="introducao__descricao">Conhecer seu perfil de investidor é o primeiro passo para orientar a busca por ativos que combinem risco e rentabilidade para obtenção de seus objetivos financeiros.<br>
+                Faça o teste e descubra gratuitamente a aplicação ideal para você!</p>
+                <button class="quiz__botao quiz__botao-teste" onclick="window.location.href = '/quiz.html'">Iniciar teste</button>
+            </div>
+            <div class="introducao__ilustracao">
+                <img src="assets/img/quiz/ilustração quiz.svg" alt="">
+            </div>
+        </section>
     </main>
 
     <!-- Rodapé -->

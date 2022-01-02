@@ -21,3 +21,13 @@ body {
     background-color: var(--branco);
     color: var(--preto);
 }
+
+::-moz-selection {
+    background-color: var(--verde-claro);
+    color: var(--branco);
+}
+
+::selection {
+    background-color: var(--verde-claro);
+    color: var(--branco);
+}

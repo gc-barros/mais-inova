@@ -1,5 +1,4 @@
 .quiz {
-    background-color: rgba(190, 190, 190, 0.06);
     display: flex;
     flex-direction: column;
     place-items: center;
@@ -108,7 +107,7 @@
     background: var(--verde-claro);
     color: var(--branco);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
+    border-radius: 15px;
     font-family: var(--mulish);
     font-size: 14px;
     display: flex;
@@ -158,7 +157,7 @@
     height: 12px;
     background: #f0f0f0;
     border-radius: 5px;
-    margin: 40px auto;
+    margin: 28px auto;
 }
 
 .quiz__progress-bar {
@@ -167,6 +166,10 @@
     height: 12px;
     width: 0%;
     transition: 1s ease all;
+}
+
+.introducao__ilustracao--quiz {
+    margin-top: 40px;
 }
 
 @media screen and (max-width: 767px) {
@@ -227,5 +230,11 @@
         width: 16px;
         height: 16px;
         margin-right: 6px;
+    }
+
+    .introducao__ilustracao--quiz {
+        order: -2;
+        margin-top: 0;
+        margin-bottom: 24px;
     }
 }
