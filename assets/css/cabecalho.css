@@ -63,6 +63,48 @@
     display: none;
 }
 
+.overlay {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+    
+.overlay-ativo {
+    display: block;
+    animation: smartAnimateIn .3s cubic-bezier(0.7, -0.4, 0.4, 1.4);
+}
+
+.anima-saida,
+.cabecalho__menu.cabecalho__menu--ativo.anima-saida,
+.modal.anima-saida {
+    animation: smartAnimateOut .3s cubic-bezier(0.7, -0.4, 0.4, 1.4) forwards;
+}
+
+@keyframes smartAnimateIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes smartAnimateOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
 @media screen and (max-width: 1023px) {
 
     .cabecalho__logo {
@@ -122,48 +164,6 @@
 
     .cabecalho__menu.cabecalho__menu--ativo {
         display: flex;
-        animation: smartAnimate .3s cubic-bezier(0.7, -0.4, 0.4, 1.4);
-    }  
-
-    
-    .overlay {
-        display: none;
-        background-color: rgba(0, 0, 0, 0.2);
-        position: fixed;
-        z-index: 9;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-    }
-    
-    .overlay-ativo {
-        display: block;
         animation: smartAnimateIn .3s cubic-bezier(0.7, -0.4, 0.4, 1.4);
-    }
-
-    .anima-saida,
-    .cabecalho__menu.cabecalho__menu--ativo.anima-saida {
-        animation: smartAnimateOut .3s cubic-bezier(0.7, -0.4, 0.4, 1.4) forwards;
-    }
-    
-    @keyframes smartAnimateIn {
-        from {
-            opacity: 0;
-        }
-    
-        to {
-            opacity: 1;
-        }
-    }
-
-    @keyframes smartAnimateOut {
-        from {
-            opacity: 1;
-        }
-
-        to {
-            opacity: 0;
-        }
-    }
+    }  
 }

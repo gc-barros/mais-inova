@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="assets/css/rodape.css">
     <link rel="stylesheet" href="assets/css/perfil/investimentos.css">
     <link rel="stylesheet" href="assets/css/principal.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
 </head>
 <body>
     <!-- Cabeçalho -->
@@ -48,7 +49,7 @@
                     <a href="#" class="cabecalho__menu--item">Notícias</a>
                 </li>
                 <li>
-                    <a href="#" class="cabecalho__menu--item cabecalho__menu--item-ativo">Perfis</a>
+                    <a href="#" class="cabecalho__menu--item">Perfis</a>
                 </li>
                 <li>
                     <a href="fazer-o-teste.html" class="cabecalho__menu--item cabecalho__menu--item-teste">Fazer o teste</a>
@@ -58,10 +59,17 @@
     </header>
     
     <!-- Overlay -->
-    <div class="overlay display-none" data-overlay></div>
+    <div class="overlay" data-overlay></div>
 
     <!-- Conteúdo principal -->
     <main>
+
+        <div class="modal" data-modal>
+            <div class="modal__grafico">
+                <button class="modal__botao-fechar" aria-label="Fechar modal" title="Fechar modal" data-fechar-modal></button>
+                <img src="assets/img/graficos/ESG/grafico-BBAS3.png" alt="Gráfico" data-grafico>
+            </div>
+        </div>
 
         <section class="principal">
             <div class="principal__perfil">
@@ -168,7 +176,7 @@
                         <p class="investimentos__ativo--tipo">BBAS3</p>
                         <p class="investimentos__ativo--nome">Banco do Brasil</p>
                         <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
+                            <button class="investimentos__ativo--botao" data-vervariacao>Ver variação</button>
                             <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
                         </div>
                     </div>
@@ -177,7 +185,7 @@
                         <p class="investimentos__ativo--tipo">KLBN11</p>
                         <p class="investimentos__ativo--nome">KLABIN S/A</p>
                         <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
+                            <button class="investimentos__ativo--botao" data-vervariacao>Ver variação</button>
                             <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
                         </div>
                     </div>
@@ -186,7 +194,7 @@
                         <p class="investimentos__ativo--tipo">SUZB3</p>
                         <p class="investimentos__ativo--nome">SUZANO S.A.</p>
                         <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
+                            <button class="investimentos__ativo--botao" data-vervariacao>Ver variação</button>
                             <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
                         </div>
                     </div>
@@ -195,7 +203,7 @@
                         <p class="investimentos__ativo--tipo">LREN3</p>
                         <p class="investimentos__ativo--nome">Lojas Renner SA</p>
                         <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
+                            <button class="investimentos__ativo--botao" data-vervariacao>Ver variação</button>
                             <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
                         </div>
                     </div>
@@ -204,7 +212,7 @@
                         <p class="investimentos__ativo--tipo">VIVT3</p>
                         <p class="investimentos__ativo--nome">Telefônica Brasil S.A.</p>
                         <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
+                            <button class="investimentos__ativo--botao" data-vervariacao>Ver variação</button>
                             <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
                         </div>
                     </div>
@@ -213,7 +221,7 @@
                         <p class="investimentos__ativo--tipo">ITSA4</p>
                         <p class="investimentos__ativo--nome">Itausa Investimentos Itau S.A Pref</p>
                         <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
+                            <button class="investimentos__ativo--botao" data-vervariacao>Ver variação</button>
                             <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
                         </div>
                     </div>
@@ -222,7 +230,7 @@
                         <p class="investimentos__ativo--tipo">ITUB4</p>
                         <p class="investimentos__ativo--nome">Itau Unibanco Holding SA Pref</p>
                         <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
+                            <button class="investimentos__ativo--botao" data-vervariacao>Ver variação</button>
                             <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
                         </div>
                     </div>
@@ -231,7 +239,7 @@
                         <p class="investimentos__ativo--tipo">SULA11</p>
                         <p class="investimentos__ativo--nome">Sul America SA Units</p>
                         <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
+                            <button class="investimentos__ativo--botao" data-vervariacao>Ver variação</button>
                             <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
                         </div>
                     </div>
@@ -240,7 +248,7 @@
                         <p class="investimentos__ativo--tipo">BRKM5</p>
                         <p class="investimentos__ativo--nome">Braskem SA Pref A</p>
                         <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
+                            <button class="investimentos__ativo--botao" data-vervariacao>Ver variação</button>
                             <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
                         </div>
                     </div>
@@ -249,7 +257,7 @@
                         <p class="investimentos__ativo--tipo">BBDC4</p>
                         <p class="investimentos__ativo--nome">Banco Bradesco Pref</p>
                         <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
+                            <button class="investimentos__ativo--botao" data-vervariacao>Ver variação</button>
                             <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
                         </div>
                     </div>
@@ -260,7 +268,7 @@
                         <p class="investimentos__ativo--tipo">ITUB4</p>
                         <p class="investimentos__ativo--nome">ITAUUNIBANCO</p>
                         <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
+                            <button class="investimentos__ativo--botao" data-vervariacao>Ver variação</button>
                             <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
                         </div>
                     </div>
@@ -269,7 +277,7 @@
                         <p class="investimentos__ativo--tipo">BBDC4</p>
                         <p class="investimentos__ativo--nome">BRADESCO</p>
                         <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
+                            <button class="investimentos__ativo--botao" data-vervariacao>Ver variação</button>
                             <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
                         </div>
                     </div>
@@ -278,7 +286,7 @@
                         <p class="investimentos__ativo--tipo">B3SA3</p>
                         <p class="investimentos__ativo--nome">B3</p>
                         <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
+                            <button class="investimentos__ativo--botao" data-vervariacao>Ver variação</button>
                             <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
                         </div>
                     </div>
@@ -287,7 +295,7 @@
                         <p class="investimentos__ativo--tipo">ABEV3</p>
                         <p class="investimentos__ativo--nome">AMBEV S/A</p>
                         <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
+                            <button class="investimentos__ativo--botao" data-vervariacao>Ver variação</button>
                             <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
                         </div>
                     </div>
@@ -296,7 +304,7 @@
                         <p class="investimentos__ativo--tipo">MGLU3</p>
                         <p class="investimentos__ativo--nome">MAGAZ LUIZA</p>
                         <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
+                            <button class="investimentos__ativo--botao" data-vervariacao>Ver variação</button>
                             <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
                         </div>
                     </div>
@@ -305,7 +313,7 @@
                         <p class="investimentos__ativo--tipo">WEGE3</p>
                         <p class="investimentos__ativo--nome">WEG</p>
                         <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
+                            <button class="investimentos__ativo--botao" data-vervariacao>Ver variação</button>
                             <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
                         </div>
                     </div>
@@ -314,7 +322,7 @@
                         <p class="investimentos__ativo--tipo">NTCO3</p>
                         <p class="investimentos__ativo--nome">GRUPO NATURA</p>
                         <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
+                            <button class="investimentos__ativo--botao" data-vervariacao>Ver variação</button>
                             <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
                         </div>
                     </div>
@@ -323,7 +331,7 @@
                         <p class="investimentos__ativo--tipo">BBAS3</p>
                         <p class="investimentos__ativo--nome">BRASIL</p>
                         <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
+                            <button class="investimentos__ativo--botao" data-vervariacao>Ver variação</button>
                             <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
                         </div>
                     </div>
@@ -332,7 +340,7 @@
                         <p class="investimentos__ativo--tipo">BPAC11</p>
                         <p class="investimentos__ativo--nome">BTGP BANCO</p>
                         <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
+                            <button class="investimentos__ativo--botao" data-vervariacao>Ver variação</button>
                             <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
                         </div>
                     </div>
@@ -341,7 +349,7 @@
                         <p class="investimentos__ativo--tipo">BIDI11</p>
                         <p class="investimentos__ativo--nome">BANCO INTER</p>
                         <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
+                            <button class="investimentos__ativo--botao" data-vervariacao>Ver variação</button>
                             <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
                         </div>
                     </div>
@@ -352,7 +360,7 @@
                         <p class="investimentos__ativo--tipo">VALE3</p>
                         <p class="investimentos__ativo--nome">VALE</p>
                         <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
+                            <button class="investimentos__ativo--botao" data-vervariacao>Ver variação</button>
                             <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
                         </div>
                     </div>
@@ -361,7 +369,7 @@
                         <p class="investimentos__ativo--tipo">ITUB4</p>
                         <p class="investimentos__ativo--nome">ITAUUNIBANCO</p>
                         <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
+                            <button class="investimentos__ativo--botao" data-vervariacao>Ver variação</button>
                             <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
                         </div>
                     </div>
@@ -370,7 +378,7 @@
                         <p class="investimentos__ativo--tipo">PETR4</p>
                         <p class="investimentos__ativo--nome">PETROBRAS</p>
                         <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
+                            <button class="investimentos__ativo--botao" data-vervariacao>Ver variação</button>
                             <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
                         </div>
                     </div>
@@ -379,7 +387,7 @@
                         <p class="investimentos__ativo--tipo">BBDC4</p>
                         <p class="investimentos__ativo--nome">BRADESCO</p>
                         <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
+                            <button class="investimentos__ativo--botao" data-vervariacao>Ver variação</button>
                             <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
                         </div>
                     </div>
@@ -388,7 +396,7 @@
                         <p class="investimentos__ativo--tipo">PETR3</p>
                         <p class="investimentos__ativo--nome">PETROBRAS</p>
                         <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
+                            <button class="investimentos__ativo--botao" data-vervariacao>Ver variação</button>
                             <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
                         </div>
                     </div>
@@ -397,7 +405,7 @@
                         <p class="investimentos__ativo--tipo">B3SA3</p>
                         <p class="investimentos__ativo--nome">B3</p>
                         <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
+                            <button class="investimentos__ativo--botao" data-vervariacao>Ver variação</button>
                             <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
                         </div>
                     </div>
@@ -406,7 +414,7 @@
                         <p class="investimentos__ativo--tipo">RDOR3</p>
                         <p class="investimentos__ativo--nome">REDE D OR</p>
                         <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
+                            <button class="investimentos__ativo--botao" data-vervariacao>Ver variação</button>
                             <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
                         </div>
                     </div>
@@ -415,7 +423,7 @@
                         <p class="investimentos__ativo--tipo">WEGE3</p>
                         <p class="investimentos__ativo--nome">WEG</p>
                         <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
+                            <button class="investimentos__ativo--botao" data-vervariacao>Ver variação</button>
                             <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
                         </div>
                     </div>
@@ -424,7 +432,7 @@
                         <p class="investimentos__ativo--tipo">MGLU3</p>
                         <p class="investimentos__ativo--nome">MAGAZ LUIZA</p>
                         <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
+                            <button class="investimentos__ativo--botao" data-vervariacao>Ver variação</button>
                             <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
                         </div>
                     </div>
@@ -433,7 +441,7 @@
                         <p class="investimentos__ativo--tipo">ITSA4</p>
                         <p class="investimentos__ativo--nome">ITAUSA</p>
                         <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
+                            <button class="investimentos__ativo--botao" data-vervariacao>Ver variação</button>
                             <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
                         </div>
                     </div>
@@ -444,7 +452,7 @@
                         <p class="investimentos__ativo--tipo">WEGE3</p>
                         <p class="investimentos__ativo--nome">WEG</p>
                         <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
+                            <button class="investimentos__ativo--botao" data-vervariacao>Ver variação</button>
                             <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
                         </div>
                     </div>
@@ -453,7 +461,7 @@
                         <p class="investimentos__ativo--tipo">SUZB3</p>
                         <p class="investimentos__ativo--nome">SUZANO S.A.</p>
                         <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
+                            <button class="investimentos__ativo--botao" data-vervariacao>Ver variação</button>
                             <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
                         </div>
                     </div>
@@ -462,7 +470,7 @@
                         <p class="investimentos__ativo--tipo">NTCO3</p>
                         <p class="investimentos__ativo--nome">GRUPO NATURA</p>
                         <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
+                            <button class="investimentos__ativo--botao" data-vervariacao>Ver variação</button>
                             <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
                         </div>
                     </div>
@@ -471,7 +479,7 @@
                         <p class="investimentos__ativo--tipo">PETR4</p>
                         <p class="investimentos__ativo--nome">PETROBRAS</p>
                         <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
+                            <button class="investimentos__ativo--botao" data-vervariacao>Ver variação</button>
                             <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
                         </div>
                     </div>
@@ -480,7 +488,7 @@
                         <p class="investimentos__ativo--tipo">PETR3</p>
                         <p class="investimentos__ativo--nome">PETROBRAS</p>
                         <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
+                            <button class="investimentos__ativo--botao" data-vervariacao>Ver variação</button>
                             <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
                         </div>
                     </div>
@@ -489,7 +497,7 @@
                         <p class="investimentos__ativo--tipo">LREN3</p>
                         <p class="investimentos__ativo--nome">LOJAS RENNER</p>
                         <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
+                            <button class="investimentos__ativo--botao" data-vervariacao>Ver variação</button>
                             <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
                         </div>
                     </div>
@@ -498,7 +506,7 @@
                         <p class="investimentos__ativo--tipo">ITUB4</p>
                         <p class="investimentos__ativo--nome">ITAUUNIBANCO</p>
                         <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
+                            <button class="investimentos__ativo--botao" data-vervariacao>Ver variação</button>
                             <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
                         </div>
                     </div>
@@ -507,7 +515,7 @@
                         <p class="investimentos__ativo--tipo">AMER3</p>
                         <p class="investimentos__ativo--nome">AMERICANAS</p>
                         <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
+                            <button class="investimentos__ativo--botao" data-vervariacao>Ver variação</button>
                             <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
                         </div>
                     </div>
@@ -516,7 +524,7 @@
                         <p class="investimentos__ativo--tipo">BBDC4</p>
                         <p class="investimentos__ativo--nome">BRADESCO</p>
                         <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
+                            <button class="investimentos__ativo--botao" data-vervariacao>Ver variação</button>
                             <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
                         </div>
                     </div>
@@ -525,7 +533,7 @@
                         <p class="investimentos__ativo--tipo">KLBN11</p>
                         <p class="investimentos__ativo--nome">KLABIN S/A</p>
                         <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
+                            <button class="investimentos__ativo--botao" data-vervariacao>Ver variação</button>
                             <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
                         </div>
                     </div>

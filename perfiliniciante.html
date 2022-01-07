@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="assets/css/rodape.css">
     <link rel="stylesheet" href="assets/css/perfil/investimentos.css">
     <link rel="stylesheet" href="assets/css/principal.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
 </head>
 <body>
     <!-- Cabeçalho -->
@@ -48,7 +49,7 @@
                     <a href="#" class="cabecalho__menu--item">Notícias</a>
                 </li>
                 <li>
-                    <a href="#" class="cabecalho__menu--item cabecalho__menu--item-ativo">Perfis</a>
+                    <a href="#" class="cabecalho__menu--item">Perfis</a>
                 </li>
                 <li>
                     <a href="fazer-o-teste.html" class="cabecalho__menu--item cabecalho__menu--item-teste">Fazer o teste</a>
@@ -58,10 +59,18 @@
     </header>
     
     <!-- Overlay -->
-    <div class="overlay display-none" data-overlay></div>
+    <div class="overlay" data-overlay></div>
 
     <!-- Conteúdo principal -->
     <main>
+
+        <div class="modal" data-modal>
+            <div class="modal__grafico">
+                <button class="modal__botao-fechar" aria-label="Fechar modal" title="Fechar modal" data-fechar-modal></button>
+                <img src="assets/img/graficos/ESG/grafico-BBAS3.png" alt="Gráfico" data-grafico>
+            </div>
+        </div>
+
         <section class="principal">
             <div class="principal__perfil">
                 <img src="./assets/img/perfil_iniciante/ilustração iniciante.svg"></img>
