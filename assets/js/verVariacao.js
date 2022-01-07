@@ -11,8 +11,10 @@ function verVariacaoInit() {
 
         botao.addEventListener("click", () => {
             grafico.setAttribute("src", source);
-            modal.classList.add("modal-ativa");
-            overlay.classList.add("overlay-ativo")
+            setTimeout(() => {
+                modal.classList.add("modal-ativa");
+                overlay.classList.add("overlay-ativo")
+            }, 400)
         })
     })
 
