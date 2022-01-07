@@ -130,6 +130,9 @@
         flex-wrap: wrap;
     }
 
+    .principal__card:hover {
+        transform: none;
+    }
     
 }
 
