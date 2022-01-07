@@ -83,12 +83,17 @@
 }
 
 .investimentos__ativo--nome {
+    margin: 10px auto 25px auto;
     margin-top: 10px;
     margin-bottom: 25px;
     color: var(--verde-escuro);
     font-weight: bold;
     font-size: 18px;
     text-transform: uppercase;
+    white-space: nowrap;
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .investimentos__ativo--botao {
@@ -111,6 +116,10 @@
 
 .investimentos__ativo--botao:first-of-type {
     margin-right: 30px;
+}
+
+.investimentos__carrossel {
+    display: none;
 }
 
 @media screen and (max-width: 1200px) {
@@ -183,4 +192,42 @@
         gap: 0;
     }
 
+    .investimentos__carrossel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: -24px;
+    }
+
+    .investimentos__carrossel--tag {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0 0 20px 20px;
+        width: 144px;
+        height: 48px;
+        background-color: var(--verde-claro);
+        font-weight: 800;
+        font-size: 14px;
+        color: var(--branco);
+        margin: 0 16px;
+    }
+
+    .investimentos__carrossel--botao {
+        width: 32px;
+        height: 32px;
+        background-color: #F4F4F4;
+        border-radius: 32px;
+        border: none;
+    }
+
+    .investimentos__carrossel--botao {
+        background: url(../../img/arrow-left-s-line.svg) no-repeat center;
+        background-color: #F4F4F4;
+    }
+
+    .investimentos__carrossel--botao:last-of-type {
+        background-image: url(../../img/arrow-right-s-line.svg);
+    }
 }
