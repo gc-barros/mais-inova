@@ -161,6 +161,10 @@
         border-radius: 10px;
     }
 
+    .investimentos__ativo--botao:hover {
+        background-color: #F4F4F4;
+    }
+
     .investimentos__ativo--botao:first-of-type {
         margin-right: 4px;
     }

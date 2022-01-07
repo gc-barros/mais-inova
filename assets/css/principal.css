@@ -94,8 +94,11 @@
     width: 210px;
     margin: auto;
     height: 300px;
+    transition: .5s ease all;
+}
 
-
+.principal__card:hover {
+    transform: scale(1.06);
 }
 
 .principal__card img {

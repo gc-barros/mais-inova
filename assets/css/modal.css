@@ -2,14 +2,15 @@
     display: none;
     position: fixed;
     z-index: 12;
-    width: 750px;
+    /* width: 750px; */
+    width: calc(64vw);
     border-radius: 10px;
     background-color: #fff;
     padding: 4px;
     padding-top: 32px;
     left: 50%;
-
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
     animation: smartAnimateIn .3s cubic-bezier(0.7, -0.4, 0.4, 1.4);
 }
 
@@ -41,7 +42,6 @@
 @media screen and (max-width: 767px) {
     .modal {
         width: calc(100vw - 48px);
-        top: 30%;
     }
 
     .modal__botao-fechar {
