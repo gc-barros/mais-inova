@@ -1,0 +1,169 @@
+.principal {
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20rem;
+    margin-top: 1rem;
+    gap: 10rem;
+    background-color: #FCFCFC;
+}
+
+.principal__perfil {
+
+    display: flex;
+    width: 55%;
+    gap: 8rem;
+    padding-top: 10rem;
+    margin: auto;
+    justify-content: space-around;
+
+}
+
+.principal__perfil div {
+    text-align: center;
+
+}
+
+.principal__perfil div h1 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: var(--verde-claro);
+
+}
+
+.principal__perfil div h3 {
+    color: #737B7D;
+}
+
+.principal__perfil div p {
+    line-height: 20px;
+    min-width: 300px;
+    text-align: justify;
+    font-size: 1.01rem;
+}
+
+
+.principal__perfil img {
+    max-width: 356px;
+
+}
+
+.principal__informacoes div {
+    text-align: center;
+}
+
+.principal__informacoes {
+
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.principal__informacoes div h4 {
+    color: var(--verde-escuro);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+
+}
+
+
+.principal__container-card {
+    display: flex;
+    width: 100%;
+
+}
+.principal__container-card .principal__content-card{
+    display: flex;
+    margin: auto;
+    gap: 5rem;
+
+}
+
+.principal__card {
+    border: 2px solid var(--verde-claro);
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    align-items: center;
+    width: 210px;
+    margin: auto;
+    height: 300px;
+
+
+}
+
+.principal__card img {
+    max-width: 280px;
+}
+
+.principal__card div p {
+    text-align: center;
+    font-size: 14px;
+}
+
+.principal__card div h3 {
+    color: var(--verde-escuro);
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width:870px) {
+
+    .principal {
+        margin-top: 1rem;
+    }
+
+    .principal__perfil {
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    
+}
+
+@media (max-width:700px) {
+
+    .principal {
+        margin-top: 1rem;
+    }
+
+    .principal__perfil {
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .principal__container-card {
+        width: 90vw;
+        overflow: hidden;
+        gap: 3.5rem;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+    }
+
+    .principal__card {
+        scroll-snap-align: center;
+    }
+
+    .principal__informacoes div h4 {
+        color: var(--verde-escuro);
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        font-weight: bold;
+        margin: auto;
+        margin-bottom: 0.5rem;
+
+    }
+
+    .principal__informacoes div {
+        margin: auto;
+    }
+
+}
