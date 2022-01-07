@@ -3,18 +3,17 @@
     position: relative;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 20rem;
     margin-top: 1rem;
     gap: 10rem;
     background-color: #FCFCFC;
+    padding-bottom: 6rem;
 }
 
 .principal__perfil {
-
     display: flex;
     width: 55%;
     gap: 8rem;
-    padding-top: 10rem;
+    padding-top: 6rem;
     margin: auto;
     justify-content: space-around;
 
@@ -80,7 +79,7 @@
 .principal__container-card .principal__content-card{
     display: flex;
     margin: auto;
-    gap: 5rem;
+    gap: 1.5rem;
 
 }
 
@@ -118,7 +117,9 @@
 @media (max-width:870px) {
 
     .principal {
-        margin-top: 1rem;
+        margin-top: .8rem;
+        padding-bottom: 4rem;
+        gap: 6rem;
     }
 
     .principal__perfil {
