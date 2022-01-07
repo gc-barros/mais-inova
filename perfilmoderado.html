@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Título e descrição -->
     <title>+inova | Uma nova forma de investir</title>
-    <meta name="description" content="Fatores ambientais, sociais e de governança estão ganhando importância em toda a sociedade e também nos investimentos. Saiba mais sobre essa relação ao entender as alternativas ESG!">
+    <meta name="description"
+        content="Fatores ambientais, sociais e de governança estão ganhando importância em toda a sociedade e também nos investimentos. Saiba mais sobre essa relação ao entender as alternativas ESG!">
     <!-- Cor customizada para dispositivos móveis -->
     <meta name="theme-color" content="#14CC47">
     <!-- Imagens para compartilhamento de links -->
     <meta property="og:locale" content="pt_BR">
     <meta property="og:site_name" content="+inova">
     <meta property="og:title" content="+inova | Uma nova forma de investir">
-    <meta property="og:description" content="Fatores ambientais, sociais e de governança estão ganhando importância em toda a sociedade e também nos investimentos. Saiba mais sobre essa relação ao entender as alternativas ESG!">
+    <meta property="og:description"
+        content="Fatores ambientais, sociais e de governança estão ganhando importância em toda a sociedade e também nos investimentos. Saiba mais sobre essa relação ao entender as alternativas ESG!">
     <meta property="og:image" itemprop="image" content="https://maisinova.vercel.app/assets/img/maisinovashare.jpg">
     <meta property="og:image:secure_url" content="https://maisinova.vercel.app/assets/img/maisinovashare.jpg">
     <meta property="og:image:type" content="image/jpeg">
@@ -25,17 +28,21 @@
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/cabecalho.css">
     <link rel="stylesheet" href="assets/css/rodape.css">
-    <link rel="stylesheet" href="assets/css/perfil/investimentos.css">
+    <link rel='stylesheet' href="assets/css/principal.css">
 </head>
+
 <body>
     <!-- Cabeçalho -->
     <header class="cabecalho">
-        <a href="index.html" title="Ir para a página inicial"><img src="assets/img/logo.png" alt="Logo +inova" class="cabecalho__logo"></a>
+        <a href="index.html" title="Ir para a página inicial"><img src="assets/img/logo.png" alt="Logo +inova"
+                class="cabecalho__logo"></a>
         <nav class="cabecalho__navegacao">
-            <button class="cabecalho__hamburguer" aria-label="Menu lateral" title="Menu lateral" data-hamburguer></button>
+            <button class="cabecalho__hamburguer" aria-label="Menu lateral" title="Menu lateral"
+                data-hamburguer></button>
             <ul class="cabecalho__menu" data-menu>
                 <li>
-                    <button class="cabecalho__close" aria-label="Fechar menu lateral" title="Fechar menu lateral" data-close-menu></button>
+                    <button class="cabecalho__close" aria-label="Fechar menu lateral" title="Fechar menu lateral"
+                        data-close-menu></button>
                 </li>
                 <li>
                     <a href="index.html" class="cabecalho__menu--item">ESG</a>
@@ -50,444 +57,63 @@
                     <a href="#" class="cabecalho__menu--item cabecalho__menu--item-ativo">Perfis</a>
                 </li>
                 <li>
-                    <a href="fazer-o-teste.html" class="cabecalho__menu--item cabecalho__menu--item-teste">Fazer o teste</a>
+                    <a href="fazer-o-teste.html" class="cabecalho__menu--item cabecalho__menu--item-teste">Fazer o
+                        teste</a>
                 </li>
             </ul>
         </nav>
     </header>
-    
+
     <!-- Overlay -->
     <div class="overlay display-none" data-overlay></div>
 
     <!-- Conteúdo principal -->
     <main class="principal">
-        
-        <section class="investimentos">
-            <div class="investimentos__box">
-        
-                <div class="investimentos__abas">
-                    <button class="investimentos__aba" data-aba="0">ETF</button>
-                    <button class="investimentos__aba" data-aba="1">ESG</button>
-                    <button class="investimentos__aba" data-aba="2">ICO2</button>
-                    <button class="investimentos__aba" data-aba="3">IGCT</button>
-                    <button class="investimentos__aba" data-aba="4">ISEE</button>
-                </div>
-        
-                <div class="investimentos__carrossel">
-                    <button class="investimentos__carrossel--botao" aria-label="Botão aba anterior" title="Ir para a aba anterior" data-carrossel-botao="left"></button>
-                    <div class="investimentos__carrossel--tag" data-carrossel-tag>ICO2</div>
-                    <button class="investimentos__carrossel--botao" aria-label="Botão próxima aba" title="Ir para a próxima aba" data-carrossel-botao="right"></button>
-                </div>
-                
-                <div class="investimentos__ativos investimentos__ativos--indice" data-ativos="0">
-                    <div class="investimentos__ativo">
-                        <p class="investimentos__ativo--tipo">ESGB11</p>
-                        <p class="investimentos__ativo--nome">S&P/B3 Brazil ESG</p>
-                        <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao" data-vervariacao>Ver variação</button>
-                            <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
-                        </div>
-                    </div>
-                
-                    <div class="investimentos__ativo">
-                        <p class="investimentos__ativo--tipo">ECOO11</p>
-                        <p class="investimentos__ativo--nome">iShares Índice Carbono Eficiente Brasil</p>
-                        <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao" data-vervariacao>Ver variação</button>
-                            <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
-                        </div>
-                    </div>
-                
-                    <div class="investimentos__ativo">
-                        <p class="investimentos__ativo--tipo">GOVE11</p>
-                        <p class="investimentos__ativo--nome">IT Now IGCT</p>
-                        <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao" data-vervariacao>Ver variação</button>
-                            <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
-                        </div>
-                    </div>
-                
-                    <div class="investimentos__ativo">
-                        <p class="investimentos__ativo--tipo">ISUS11</p>
-                        <p class="investimentos__ativo--nome">IT Now ISE</p>
-                        <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao" data-vervariacao>Ver variação</button>
-                            <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
-                        </div>
-                    </div>
-                </div>
+        <!-- Remover CSS inline depois -->
+        <div class="principal__perfil">
+            <img src="./assets/img/perfil_moderado/ilustração_moderado.svg"></img>
+            <div class="principal__introducao">
+                <h3>Seu perfil é</h3>
+                <h1>O Moderado</h1>
+                <p>
+                    Mescla as principais características dos perfis iniciante e arrojado. Reconhece que precisa correr
+                    um pouco de risco para aproveitar produtos que oferecem maiores chances de rentabilidade.
+                </p>
 
-                <div class="investimentos__ativos investimentos__ativos--acoes" data-ativos="1">
-                    <div class="investimentos__ativo">
-                        <p class="investimentos__ativo--tipo">BBAS3</p>
-                        <p class="investimentos__ativo--nome">Banco do Brasil</p>
-                        <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
-                            <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
-                        </div>
-                    </div>
-        
-                    <div class="investimentos__ativo">
-                        <p class="investimentos__ativo--tipo">KLBN11</p>
-                        <p class="investimentos__ativo--nome">KLABIN S/A</p>
-                        <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
-                            <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
-                        </div>
-                    </div>
-        
-                    <div class="investimentos__ativo">
-                        <p class="investimentos__ativo--tipo">SUZB3</p>
-                        <p class="investimentos__ativo--nome">SUZANO S.A.</p>
-                        <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
-                            <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
-                        </div>
-                    </div>
-        
-                    <div class="investimentos__ativo">
-                        <p class="investimentos__ativo--tipo">LREN3</p>
-                        <p class="investimentos__ativo--nome">Lojas Renner SA</p>
-                        <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
-                            <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
-                        </div>
-                    </div>
-        
-                    <div class="investimentos__ativo">
-                        <p class="investimentos__ativo--tipo">VIVT3</p>
-                        <p class="investimentos__ativo--nome">Telefônica Brasil S.A.</p>
-                        <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
-                            <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
-                        </div>
-                    </div>
-        
-                    <div class="investimentos__ativo">
-                        <p class="investimentos__ativo--tipo">ITSA4</p>
-                        <p class="investimentos__ativo--nome">Itausa Investimentos Itau S.A Pref</p>
-                        <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
-                            <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
-                        </div>
-                    </div>
-        
-                    <div class="investimentos__ativo">
-                        <p class="investimentos__ativo--tipo">ITUB4</p>
-                        <p class="investimentos__ativo--nome">Itau Unibanco Holding SA Pref</p>
-                        <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
-                            <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
-                        </div>
-                    </div>
-        
-                    <div class="investimentos__ativo">
-                        <p class="investimentos__ativo--tipo">SULA11</p>
-                        <p class="investimentos__ativo--nome">Sul America SA Units</p>
-                        <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
-                            <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
-                        </div>
-                    </div>
-        
-                    <div class="investimentos__ativo">
-                        <p class="investimentos__ativo--tipo">BRKM5</p>
-                        <p class="investimentos__ativo--nome">Braskem SA Pref A</p>
-                        <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
-                            <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
-                        </div>
-                    </div>
-        
-                    <div class="investimentos__ativo">
-                        <p class="investimentos__ativo--tipo">BBDC4</p>
-                        <p class="investimentos__ativo--nome">Banco Bradesco Pref</p>
-                        <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
-                            <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="investimentos__ativos investimentos__ativos--ico2" data-ativos="2">
-                    <div class="investimentos__ativo">
-                        <p class="investimentos__ativo--tipo">ITUB4</p>
-                        <p class="investimentos__ativo--nome">ITAUUNIBANCO</p>
-                        <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
-                            <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
-                        </div>
-                    </div>
-        
-                    <div class="investimentos__ativo">
-                        <p class="investimentos__ativo--tipo">BBDC4</p>
-                        <p class="investimentos__ativo--nome">BRADESCO</p>
-                        <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
-                            <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
-                        </div>
-                    </div>
-        
-                    <div class="investimentos__ativo">
-                        <p class="investimentos__ativo--tipo">B3SA3</p>
-                        <p class="investimentos__ativo--nome">B3</p>
-                        <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
-                            <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
-                        </div>
-                    </div>
-        
-                    <div class="investimentos__ativo">
-                        <p class="investimentos__ativo--tipo">ABEV3</p>
-                        <p class="investimentos__ativo--nome">AMBEV S/A</p>
-                        <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
-                            <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
-                        </div>
-                    </div>
-        
-                    <div class="investimentos__ativo">
-                        <p class="investimentos__ativo--tipo">MGLU3</p>
-                        <p class="investimentos__ativo--nome">MAGAZ LUIZA</p>
-                        <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
-                            <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
-                        </div>
-                    </div>
-        
-                    <div class="investimentos__ativo">
-                        <p class="investimentos__ativo--tipo">WEGE3</p>
-                        <p class="investimentos__ativo--nome">WEG</p>
-                        <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
-                            <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
-                        </div>
-                    </div>
-        
-                    <div class="investimentos__ativo">
-                        <p class="investimentos__ativo--tipo">NTCO3</p>
-                        <p class="investimentos__ativo--nome">GRUPO NATURA</p>
-                        <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
-                            <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
-                        </div>
-                    </div>
-        
-                    <div class="investimentos__ativo">
-                        <p class="investimentos__ativo--tipo">BBAS3</p>
-                        <p class="investimentos__ativo--nome">BRASIL</p>
-                        <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
-                            <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
-                        </div>
-                    </div>
-        
-                    <div class="investimentos__ativo">
-                        <p class="investimentos__ativo--tipo">BPAC11</p>
-                        <p class="investimentos__ativo--nome">BTGP BANCO</p>
-                        <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
-                            <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
-                        </div>
-                    </div>
-        
-                    <div class="investimentos__ativo">
-                        <p class="investimentos__ativo--tipo">BIDI11</p>
-                        <p class="investimentos__ativo--nome">BANCO INTER</p>
-                        <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
-                            <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="investimentos__ativos investimentos__ativos--igct" data-ativos="3">
-                    <div class="investimentos__ativo">
-                        <p class="investimentos__ativo--tipo">VALE3</p>
-                        <p class="investimentos__ativo--nome">VALE</p>
-                        <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
-                            <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
-                        </div>
-                    </div>
-        
-                    <div class="investimentos__ativo">
-                        <p class="investimentos__ativo--tipo">ITUB4</p>
-                        <p class="investimentos__ativo--nome">ITAUUNIBANCO</p>
-                        <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
-                            <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
-                        </div>
-                    </div>
-        
-                    <div class="investimentos__ativo">
-                        <p class="investimentos__ativo--tipo">PETR4</p>
-                        <p class="investimentos__ativo--nome">PETROBRAS</p>
-                        <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
-                            <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
-                        </div>
-                    </div>
-        
-                    <div class="investimentos__ativo">
-                        <p class="investimentos__ativo--tipo">BBDC4</p>
-                        <p class="investimentos__ativo--nome">BRADESCO</p>
-                        <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
-                            <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
-                        </div>
-                    </div>
-        
-                    <div class="investimentos__ativo">
-                        <p class="investimentos__ativo--tipo">PETR3</p>
-                        <p class="investimentos__ativo--nome">PETROBRAS</p>
-                        <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
-                            <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
-                        </div>
-                    </div>
-        
-                    <div class="investimentos__ativo">
-                        <p class="investimentos__ativo--tipo">B3SA3</p>
-                        <p class="investimentos__ativo--nome">B3</p>
-                        <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
-                            <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
-                        </div>
-                    </div>
-        
-                    <div class="investimentos__ativo">
-                        <p class="investimentos__ativo--tipo">RDOR3</p>
-                        <p class="investimentos__ativo--nome">REDE D OR</p>
-                        <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
-                            <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
-                        </div>
-                    </div>
-        
-                    <div class="investimentos__ativo">
-                        <p class="investimentos__ativo--tipo">WEGE3</p>
-                        <p class="investimentos__ativo--nome">WEG</p>
-                        <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
-                            <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
-                        </div>
-                    </div>
-        
-                    <div class="investimentos__ativo">
-                        <p class="investimentos__ativo--tipo">MGLU3</p>
-                        <p class="investimentos__ativo--nome">MAGAZ LUIZA</p>
-                        <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
-                            <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
-                        </div>
-                    </div>
-        
-                    <div class="investimentos__ativo">
-                        <p class="investimentos__ativo--tipo">ITSA4</p>
-                        <p class="investimentos__ativo--nome">ITAUSA</p>
-                        <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
-                            <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="investimentos__ativos investimentos__ativos--isee" data-ativos="4">
-                    <div class="investimentos__ativo">
-                        <p class="investimentos__ativo--tipo">WEGE3</p>
-                        <p class="investimentos__ativo--nome">WEG</p>
-                        <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
-                            <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
-                        </div>
-                    </div>
-        
-                    <div class="investimentos__ativo">
-                        <p class="investimentos__ativo--tipo">SUZB3</p>
-                        <p class="investimentos__ativo--nome">SUZANO S.A.</p>
-                        <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
-                            <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
-                        </div>
-                    </div>
-        
-                    <div class="investimentos__ativo">
-                        <p class="investimentos__ativo--tipo">NTCO3</p>
-                        <p class="investimentos__ativo--nome">GRUPO NATURA</p>
-                        <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
-                            <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
-                        </div>
-                    </div>
-        
-                    <div class="investimentos__ativo">
-                        <p class="investimentos__ativo--tipo">PETR4</p>
-                        <p class="investimentos__ativo--nome">PETROBRAS</p>
-                        <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
-                            <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
-                        </div>
-                    </div>
-        
-                    <div class="investimentos__ativo">
-                        <p class="investimentos__ativo--tipo">PETR3</p>
-                        <p class="investimentos__ativo--nome">PETROBRAS</p>
-                        <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
-                            <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
-                        </div>
-                    </div>
-        
-                    <div class="investimentos__ativo">
-                        <p class="investimentos__ativo--tipo">LREN3</p>
-                        <p class="investimentos__ativo--nome">LOJAS RENNER</p>
-                        <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
-                            <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
-                        </div>
-                    </div>
-        
-                    <div class="investimentos__ativo">
-                        <p class="investimentos__ativo--tipo">ITUB4</p>
-                        <p class="investimentos__ativo--nome">ITAUUNIBANCO</p>
-                        <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
-                            <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
-                        </div>
-                    </div>
-        
-                    <div class="investimentos__ativo">
-                        <p class="investimentos__ativo--tipo">AMER3</p>
-                        <p class="investimentos__ativo--nome">AMERICANAS</p>
-                        <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
-                            <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
-                        </div>
-                    </div>
-        
-                    <div class="investimentos__ativo">
-                        <p class="investimentos__ativo--tipo">BBDC4</p>
-                        <p class="investimentos__ativo--nome">BRADESCO</p>
-                        <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
-                            <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
-                        </div>
-                    </div>
-        
-                    <div class="investimentos__ativo">
-                        <p class="investimentos__ativo--tipo">KLBN11</p>
-                        <p class="investimentos__ativo--nome">KLABIN S/A</p>
-                        <div class="investimentos__ativo--botoes">
-                            <button class="investimentos__ativo--botao">Ver variação</button>
-                            <button class="investimentos__ativo--botao" data-saibamais>Saiba mais</button>
-                        </div>
-                    </div>
-                </div>
-        
             </div>
-        
-        </section>
+        </div>
+
+        <div class="principal__informacoes">
+
+            <div>
+                <h4>Outros usuários moderados costumam investir em...</h4>
+                <p>Preferências dos investidores com seu perfil de investimento</p>
+            </div>
+
+            <div class="principal__container-card">
+
+
+                <div class="principal__card">
+                    <img alt="ilustração ações" src="./assets/img/perfil_moderado/ilustração_ações.svg"></img>
+                    <div>
+                        <h3>Ações</h3>
+                        <p>Representam uma fração do capital social de uma empresa. </p>
+                    </div>
+
+                </div>
+                <div class="principal__card">
+                    <img alt="ilustração etfs" src="./assets/img/perfil_moderado/ilustração_ets.svg"></img>
+                    <div>
+                        <h3>ETFs</h3>
+                        <p>Grupo de ações montado de acordo com algum índice.</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
 
     </main>
 
@@ -500,13 +126,16 @@
                 <span class="rodape__tech">Cientistas de Dados</span>
                 <ul class="rodape__dados">
                     <li class="rodape__membro">
-                        <a href="https://www.linkedin.com/in/beatriz-de-brito-lima/" target="_blank" rel="noreferrer">Beatriz Brito</a>
+                        <a href="https://www.linkedin.com/in/beatriz-de-brito-lima/" target="_blank"
+                            rel="noreferrer">Beatriz Brito</a>
                     </li>
                     <li class="rodape__membro">
-                        <a href="https://www.linkedin.com/in/abreujms" target="_blank" rel="noreferrer">João M. Abreu</a>
+                        <a href="https://www.linkedin.com/in/abreujms" target="_blank" rel="noreferrer">João M.
+                            Abreu</a>
                     </li>
                     <li class="rodape__membro">
-                        <a href="https://www.linkedin.com/in/lucas-teixeira-matos/" target="_blank" rel="noreferrer">Lucas Teixeira</a>
+                        <a href="https://www.linkedin.com/in/lucas-teixeira-matos/" target="_blank"
+                            rel="noreferrer">Lucas Teixeira</a>
                     </li>
                 </ul>
             </div>
@@ -515,13 +144,16 @@
                 <span class="rodape__tech">UX/UI Designers</span>
                 <ul class="rodape__dados">
                     <li class="rodape__membro">
-                        <a href="https://www.linkedin.com/in/karolina-lima-9a277a124/" target="_blank" rel="noreferrer">Karolina Lima</a>
+                        <a href="https://www.linkedin.com/in/karolina-lima-9a277a124/" target="_blank"
+                            rel="noreferrer">Karolina Lima</a>
                     </li>
                     <li class="rodape__membro">
-                        <a href="http://linkedin.com/in/lianna-ribeiro-3366b9137/" target="_blank" rel="noreferrer">Lianna Ribeiro</a>
+                        <a href="http://linkedin.com/in/lianna-ribeiro-3366b9137/" target="_blank"
+                            rel="noreferrer">Lianna Ribeiro</a>
                     </li>
                     <li class="rodape__membro">
-                        <a href="https://www.linkedin.com/in/tais-ximenes-43093a192" target="_blank" rel="noreferrer">Taís Ximenes</a>
+                        <a href="https://www.linkedin.com/in/tais-ximenes-43093a192" target="_blank"
+                            rel="noreferrer">Taís Ximenes</a>
                     </li>
                 </ul>
             </div>
@@ -533,25 +165,31 @@
                         <a href="#" target="_blank" rel="noreferrer">Carlos Felipe</a>
                     </li>
                     <li class="rodape__membro">
-                        <a href="https://www.linkedin.com/in/gabriel-barros-526ab7127/" target="_blank" rel="noreferrer">Gabriel Barros</a>
+                        <a href="https://www.linkedin.com/in/gabriel-barros-526ab7127/" target="_blank"
+                            rel="noreferrer">Gabriel Barros</a>
                     </li>
                     <li class="rodape__membro">
-                        <a href="https://www.linkedin.com/in/johnny-emanoel-de-sousa-lima-b28311119/" target="_blank" rel="noreferrer">Johnny Lima</a>
+                        <a href="https://www.linkedin.com/in/johnny-emanoel-de-sousa-lima-b28311119/" target="_blank"
+                            rel="noreferrer">Johnny Lima</a>
                     </li>
                     <li class="rodape__membro">
-                        <a href="https://www.linkedin.com/in/larissakcarvalho/" target="_blank" rel="noreferrer">Larissa Karoline</a>
+                        <a href="https://www.linkedin.com/in/larissakcarvalho/" target="_blank" rel="noreferrer">Larissa
+                            Karoline</a>
                     </li>
                     <li class="rodape__membro">
-                        <a href="https://www.linkedin.com/in/lilia-rosa-0a5ab8216/" target="_blank" rel="noreferrer">Lilia Rosa</a>
+                        <a href="https://www.linkedin.com/in/lilia-rosa-0a5ab8216/" target="_blank"
+                            rel="noreferrer">Lilia Rosa</a>
                     </li>
                     <li class="rodape__membro">
-                        <a href="https://www.linkedin.com/in/mateus-gomes-barros-b90863206" target="_blank" rel="noreferrer">Mateus Gomes</a>
+                        <a href="https://www.linkedin.com/in/mateus-gomes-barros-b90863206" target="_blank"
+                            rel="noreferrer">Mateus Gomes</a>
                     </li>
                 </ul>
             </div>
         </div>
 
     </footer>
-    <script type="module" src="assets/js/perfil.js"></script>
+    <script type="module" src="assets/js/main.js"></script>
 </body>
+
 </html>
