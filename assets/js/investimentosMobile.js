@@ -5,14 +5,10 @@ function investimentosMobileInit() {
     const abasAtivos = document.querySelectorAll("[data-ativos]");
 
     let abaAtual = 0;
-    let tagNames = ["Índice", "Ações", "ICO2", "IGCT", "ISEE"]
+    let tagNames = ["ETF", "ESG", "ICO2", "IGCT", "ISEE"]
 
     if (abasAtivos.length == 4) {
-        tagNames = ["Ações", "ICO2", "IGCT", "ISEE"];
-    }
-
-    if (abasAtivos.length == 3) {
-         tagNames = ["ICO2", "IGCT", "ISEE"];
+        tagNames = ["ESG", "ICO2", "IGCT", "ISEE"];
     }
 
     renderizarTag(abaAtual);
