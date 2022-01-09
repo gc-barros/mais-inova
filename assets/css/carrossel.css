@@ -110,6 +110,7 @@
 
 .principal.carrossel__container.carrossel__container--inicio {
     background-color: transparent;
+    margin-bottom: 0;
 }
 
 @media (max-width: 1024px) {
@@ -150,7 +151,7 @@
 
     .principal__noticias {
         padding-bottom: 1rem;
-        height: 80vh;
+        height: 500px;
         box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
     }
 
@@ -172,7 +173,7 @@
 
     .principal__left-arrow,
     .principal__right-arrow {
-        bottom: 86%;
+        bottom: 76%;
     }
 
     .principal__slides-noticia {

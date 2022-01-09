@@ -1,0 +1,247 @@
+.qual-perfil,
+#quizz {
+    padding: 0 24px;
+}
+
+.qual-perfil {
+    padding-top: 80px;
+}
+
+.investidor {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 40px;
+
+    text-align: center;
+    letter-spacing: 0.1px;
+
+    color: #14cc47;
+}
+
+.investidor-frase {
+    margin-bottom: 2%;
+
+    font-size: 16px;
+    line-height: 22px;
+
+    text-align: center;
+    letter-spacing: 0.3px;
+
+    color: #373f41;
+}
+
+#perfis {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-end;
+}
+
+#perfis h3 {
+    padding: 9%;
+    padding-bottom: 1rem;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 24px;
+
+    text-align: center;
+    letter-spacing: 0.1px;
+
+    color: #084f1c;
+}
+
+.frase-investidor {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    max-width: 280px;
+    margin: auto;
+    color: #373f41;
+}
+
+.perfil,
+.moderado {
+    border: 2px solid #14cc47;
+    width: 330px;
+    height: 440px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    position: relative;
+}
+
+.moderado {
+    height: 490px;
+}
+
+.caracteristicas {
+    padding: 5%;
+    padding-top: 1.5rem;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    color: #13bb42;
+}
+
+.moderado > .caracteristicas {
+    padding-top: 3.5rem;
+}
+
+.check {
+    display: flex;
+    margin-bottom: .75rem;
+    align-items: flex-start;
+}
+.check img {
+    margin-right: .5rem;
+}
+
+.saibamais {
+    display: flex;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.saibamais-bottao {
+    margin: auto;
+    font-size: 20px;
+    width: 206px;
+    height: 50px;
+    border-radius: 10px;
+    font-weight: 800;
+    color: var(--branco);
+    background-color: var(--verde-claro);
+    transition: 0.6s ease all;
+    cursor: pointer;
+    line-height: 22px;
+    border: none;
+    transition: .8s ease all;
+}
+
+.saibamais-bottao:hover,
+.quizz-botao:hover {
+    background-color: var(--verde-escuro);
+}
+
+#quizz {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.quizz-duvida {
+    margin-top: 6rem;
+
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+
+    letter-spacing: 0.1px;
+
+    color: #084f1c;
+
+}
+
+.quizz-frase {
+    margin-bottom: 3rem;
+    font-weight: 600;
+    font-family: Mulish;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: .75rem;
+    letter-spacing: 0.3px;
+
+    color: #373f41;
+}
+
+.quizz-botao {
+    border: none;
+    box-sizing: border-box;
+    width: 210px;
+    height: 54px;
+    border-radius: 10px;
+    font-weight: 800;
+    color: var(--branco);
+    background-color: var(--verde-claro);
+    transition: 0.6s ease all;
+    cursor: pointer;
+    line-height: 22px;
+    font-size: 22px;
+    transition: .8s ease all;
+}
+
+.qual-perfil {
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.qual-perfil .secao__titulo {
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+    .perfil__descricao {
+        text-align: center;
+    }
+
+    .quizz-duvida {
+        font-size: 22px;
+    }
+
+    #perfis {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .perfil,
+    .moderado {
+        margin: 1.5rem 0;
+        height: auto;
+        padding-bottom: 80px;
+        max-width: 300px;
+    }
+
+    .quizz-botao {
+        width: 206px;
+        height: 54px;
+        font-size: 16px;
+    }
+
+    .saibamais-bottao {
+        width: 120px;
+        height: 42px;
+        font-size: 13px;
+    }
+
+    .check > p,
+    .frase-investidor {
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    .caracteristicas {
+        padding-top: 1.5rem;
+    }
+
+    .quizz-duvida {
+        margin-top: 3rem;
+    }
+
+    .qual-perfil {
+        margin-bottom: 1rem;
+        padding-top: 0;
+    }
+
+    #perfis {
+        gap: .5rem;
+    }
+}

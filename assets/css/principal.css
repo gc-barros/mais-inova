@@ -6,7 +6,6 @@
     margin-top: 1rem;
     gap: 8rem;
     background-color: #FCFCFC;
-    padding-bottom: 4rem;
 }
 
 .principal__perfil {
@@ -120,8 +119,7 @@
 @media (max-width:870px) {
 
     .principal {
-        margin-top: .8rem;
-        padding-bottom: 4rem;
+        margin-top: .7rem;
         gap: 6rem;
     }
 
