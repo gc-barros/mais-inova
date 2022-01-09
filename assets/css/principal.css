@@ -4,9 +4,9 @@
     align-items: center;
     flex-direction: column;
     margin-top: 1rem;
-    gap: 10rem;
+    gap: 8rem;
     background-color: #FCFCFC;
-    padding-bottom: 6rem;
+    padding-bottom: 4rem;
 }
 
 .principal__perfil {
@@ -44,7 +44,7 @@
 
 
 .principal__perfil img {
-    max-width: 356px;
+    max-width: 320px;
 
 }
 
@@ -136,7 +136,7 @@
     
 }
 
-@media (max-width:700px) {
+@media (max-width:900px) {
 
     .principal {
         margin-top: 1rem;
