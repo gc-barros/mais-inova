@@ -21,6 +21,7 @@
     <meta property="og:url" content="https://maisinova.vercel.app/">
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/img/favicon3.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <!-- Folhas de estilo -->
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/cabecalho.css">
@@ -31,6 +32,7 @@
     <link rel="stylesheet" href="assets/css/carrossel.css">
     <link rel="stylesheet" href="assets/css/principal.css">
     <link rel="stylesheet" href="assets/css/inicio/perfis.css">
+    <link rel="stylesheet" href="assets/css/botaoTopo.css">
 </head>
 <body>
     <!-- Cabeçalho -->
@@ -46,13 +48,13 @@
                     <a href="index.html" class="cabecalho__menu--item cabecalho__menu--item-ativo">ESG</a>
                 </li>
                 <li>
-                    <a href="#" class="cabecalho__menu--item">Mercado</a>
+                    <a href="#mercado" class="cabecalho__menu--item">Mercado</a>
                 </li>
                 <li>
-                    <a href="#" class="cabecalho__menu--item">Notícias</a>
+                    <a href="#noticias" class="cabecalho__menu--item">Notícias</a>
                 </li>
                 <li>
-                    <a href="#" class="cabecalho__menu--item">Perfis</a>
+                    <a href="#qualperfil" class="cabecalho__menu--item">Perfis</a>
                 </li>
                 <li>
                     <a href="fazer-o-teste.html" class="cabecalho__menu--item cabecalho__menu--item-teste">Fazer o teste</a>
@@ -75,8 +77,8 @@
                         <p  class="introducao__texto--description">Fatores ambientais, sociais e de governança estão ganhando importância em toda a sociedade e também nos investimentos. Saiba mais sobre essa relação ao entender as alternativas ESG!</p>
                     </div>
                     <div class="introducao__botoes">
-                        <button class="introducao__botao">Quero conhecer mais sobre esse mercado</button>
-                        <button class="introducao__botao">Já conheço o mercado e quero fazer o teste</button>
+                        <button class="introducao__botao" onclick="window.location.href = '/index.html#mercado'">Quero conhecer mais sobre esse mercado</button>
+                        <button class="introducao__botao" onclick="window.location.href = '/fazer-o-teste.html'">Já conheço o mercado e quero fazer o teste</button>
                     </div>
                 </div>
                 <div class="introducao__imagem">
@@ -85,7 +87,9 @@
             </div>
         </section>
 
-        <section class="mercado">
+        <button class="botao-topo" aria-label="Botão voltar ao topo" title="Voltar ao topo da página" data-scrollToTop><i class="ri-arrow-up-line"></i></button>
+
+        <section class="mercado" id="mercado">
             <h2 class="mercado__titulo secao__titulo">Conheça mais sobre o mercado</h2>
             <p class="mercado__descricao secao__descricao">ESG é a sigla em inglês para "environmental, social and governance" (ambiental, social e governança, em português). Através dessa abordagem é possível ampliar a perspectiva de análise do negócio para além das métricas financeiras.</p>
             <div class="mercado__cards">
@@ -131,7 +135,7 @@
             </div>
         </section>
 
-        <section class="principal carrossel__container carrossel__container--inicio">
+        <section class="principal carrossel__container carrossel__container--inicio" id="noticias">
             <h3 class="noticias__destaque">Notícias em destaque</h3>
             <div class="content_principal">
                 <div class="principal__noticias">
@@ -189,7 +193,7 @@
             </div>
         </section>
 
-        <section class="qual-perfil">
+        <section class="qual-perfil" id="qualperfil">
             <h2 class="secao__titulo">Qual seu perfil de investidor?</h2>
             <p class="secao__descricao perfil__descricao">Você sabe o seu tipo de investidor? Não sabe por onde começar? A gente te ajuda!</p>
         </section>
@@ -212,7 +216,7 @@
                     </div>
                 </div>
                 <div class="saibamais">
-                    <button class="saibamais-bottao">Saiba mais</button>
+                    <button class="saibamais-bottao" onclick="window.location.href = '/perfiliniciante.html'">Saiba mais</button>
                 </div>
             </div>
             <div class="moderado">
@@ -233,7 +237,7 @@
                     </div>
                 </div>
                 <div class="saibamais">
-                    <button class="saibamais-bottao">Saiba mais</button>
+                    <button class="saibamais-bottao" onclick="window.location.href = '/perfilmoderado.html'">Saiba mais</button>
                 </div>
             </div>
             <div class="perfil">
@@ -254,7 +258,7 @@
                     </div>
                 </div>
                 <div class="saibamais">
-                    <button class="saibamais-bottao">Saiba mais</button>
+                    <button class="saibamais-bottao" onclick="window.location.href = '/perfilarrojado.html'">Saiba mais</button>
                 </div>
             </div>
         </section>
@@ -262,7 +266,7 @@
         <section id="quizz">
             <h2 class="quizz-duvida">Ainda está com dúvida de qual o seu perfil?</h2>
             <p class="quizz-frase">Descubra gratuitamente o seu perfil de investidor.</p>
-            <button class="quizz-botao">Fazer o teste</button>
+            <button class="quizz-botao" onclick="window.location.href = '/fazer-o-teste.html'">Fazer o teste</button>
         </section>
 
     </main>

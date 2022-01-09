@@ -16,6 +16,10 @@
     --mulish: 'Mulish', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--mulish);
     background-color: var(--branco);
