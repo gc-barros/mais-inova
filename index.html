@@ -27,6 +27,9 @@
     <link rel="stylesheet" href="assets/css/rodape.css">
     <link rel="stylesheet" href="assets/css/inicio/introducao.css">
     <link rel="stylesheet" href="assets/css/inicio/mercado.css">
+    <link rel="stylesheet" href="assets/css/inicio/graficos.css">
+    <link rel="stylesheet" href="assets/css/carrossel.css">
+    <link rel="stylesheet" href="assets/css/principal.css">
 </head>
 <body>
     <!-- Cabeçalho -->
@@ -61,8 +64,7 @@
     <div class="overlay display-none" data-overlay></div>
     
     <!-- Conteúdo principal -->
-    <main class="principal">
-
+    <main>
         <section class="introducao">
             <div class="introducao__container">
                 <div class="introducao__chamada">
@@ -103,8 +105,91 @@
                     Transparência das relações e prestação de contas; combate à corrupção e crimes; incentivo à comunicação entre setores; fomento a melhoria da gestão; integridade nos processos.</p>
                 </div>
             </div>
+            <h2 class="secao__titulo esg__titulo">Por que pensar em ESG?</h2>
+            <p class="secao__descricao esg__descricao">ESG nas empresas é cada vez mais reconhecida por governos e por quem se interessa em agir social e ambientalmente. As medidas ESG promovem a diminuição de gastos, pois muitas delas reduzem custos com energia, materiais, máquinas e desperdícios. Ademais, a incorporação de medidas sustentáveis à estratégia e modelo de negócios das organizações beneficia as parcerias entre empresas no mundo inteiro.</p>
         </section>
+
+        <section class="graficos">
+            <div class="graficos__texto">
+                <h2 class="mercado__card--titulo graficos__titulo">Mercado ESG Nacional<br>Vista de gráfico</h2>
+                <p class="secao__descricao graficos__descricao">Um mapeamento realizado pela Associação Brasileira das Entidades dos Mercados Financeiro e de Capitais (Anbima) demonstrou um aumento significativo no ano de 2020 de empresas que se denominavam sustentáveis em relação ao ano anterior.</p>
+            </div>
+            <div class="graficos__painel">
+                <div class="graficos__botoes">
+                    <button class="graficos__botao graficos__botao--ativo" data-grafico-botao>ESG</button>
+                    <button class="graficos__botao" data-grafico-botao>ICO2</button>
+                    <button class="graficos__botao" data-grafico-botao>IGCT</button>
+                    <button class="graficos__botao" data-grafico-botao>ISEE</button>
+                </div>
+                <div class="graficos__grafico">
+                    <img src="assets/img/graficos/INDICES/grafico-ESG.png" alt="Gráfico ESG" data-grafico-img>
+                    <img src="assets/img/graficos/INDICES/grafico-ICO2.png" alt="Gráfico ICO2" style="display: none;" data-grafico-img>
+                    <img src="assets/img/graficos/INDICES/grafico-IGCT.png" alt="Gráfico IGCT" style="display: none;" data-grafico-img>
+                    <img src="assets/img/graficos/INDICES/grafico-ISEE.png" alt="Gráfico ISEE" style="display: none;" data-grafico-img>
+                </div>
+            </div>
+        </section>
+
+        <section class="principal carrossel__container carrossel__container--inicio">
+            <h3 class="noticias__destaque">Notícias em destaque</h3>
+            <div class="content_principal">
+                <div class="principal__noticias">
+                    <div class="principal__carrosel">
+                        <div class="principal__slides-noticia">
+                            <img src="./assets/img/perfil_moderado/folhas.png" alt="folhas" />
+                            <div>
+                                <h1>
+                                    Santander Brasil lança CDB Verde
+                                </h1>
+                                <p>"O CDB Baixo Carbono quebra um paradigma importante, porque mostra que é possível
+                                    fazer
+                                    uma boa gestão financeira e, simultaneamente, apoiar a agenda ESG."</p>
+                                <span>Luiz Masagão, diretor de tesouraria do Santander Brasil. </span>
+                            </div>
+                        </div>
+                        <div class="principal__slides-noticia">
+                            <img class="img" src="./assets/img/perfil_moderado/planeta.png" alt="folhas" />
+                            <div>
+                                <h1>
+                                    A gigante catarinense WEG é um dos exemplos em sustentabilidade
+                                </h1>
+                                <p>"Otimizamos recursos, reduzimos custos, racionalizamos despesas e buscamos sempre o menor
+                                    impacto ambiental em nossas operações."</p>
+                                <span>Hilton José da Veiga Faria, diretor de RH e sustentabilidade do grupo WEG. </span>
+                            </div>
+                        </div>
+                        <div class="principal__slides-noticia">
+                            <img class="img" src="./assets/img/perfil_moderado/mao.png" alt="folhas" />
+                            <div>
+                                <h1>
+                                    Natura lança Biome, marca de produtos em barra e zero plástico
+                                </h1>
+                                <p>"Esse produto olhou para diversos desafios, um deles é a lógica de sistemas agroflorestais de modo que não haja
+                                    uso de agrotóxico. Além do menor uso de água, na sustentabilidade"
+                                </p>
+                                <span>Andrea Álvares, vice-presidente de marca, inovação e sustentabilidade da Natura. </span>
+                            </div>
+                        </div>
+                        <div class="principal__slides-noticia">
+                            <img class="img" src="./assets/img/perfil_moderado/planta.png" alt="folhas" />
+                            <div>
+                                <h1>
+                                    Lojas Renner inclui agenda de 2021 para sustentabilidade
+                                </h1>
+                                <p>"Chegamos a um total de 130 milhões de peças com alguma matéria-prima menos impactante, 75 milhões delas em 2020."</p>
+                                <span>Eduardo Ferlauto, gerente geral de sustentabilidade da Renner. </span>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+                <button class="principal__left-arrow" aria-label="Botão voltar notícia" title="Notícia anterior"></button>
+                <button class="principal__right-arrow" aria-label="Botão próxima notícia" title="Próxima notícia"></button>
+            </div>
+        </section>
+
     </main>
+    
 
     <!-- Rodapé -->
     <footer class="rodape">

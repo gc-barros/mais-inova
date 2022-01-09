@@ -65,14 +65,25 @@
     color: var(--branco);
 }
 
+.esg__titulo {
+    margin-top: 88px;
+}
+
+.esg__descricao {
+    max-width: 900px;
+}
+
 @media screen and (max-width: 767px) {
     .secao__titulo {
         font-size: 22px;
         margin-bottom: 1.5rem;
+        margin-top: 40px;
+        line-height: 26px;
     }
 
     .secao__descricao {
         font-size: 13px;
+        text-align: left;
     }
 
     .mercado__card {
@@ -86,6 +97,11 @@
     }
 
     .mercado__descricao {
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
     }
+
+    .mercado {
+        padding-bottom: 40px;
+    }
+
 }

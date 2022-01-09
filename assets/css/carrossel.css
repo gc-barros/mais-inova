@@ -108,6 +108,10 @@
     margin-bottom: 56px;
 }
 
+.principal.carrossel__container.carrossel__container--inicio {
+    background-color: transparent;
+}
+
 @media (max-width: 1024px) {
     .principal__noticias {
         width: 600px;
