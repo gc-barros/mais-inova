@@ -1,0 +1,147 @@
+.introducao {
+    overflow-x: hidden;
+    padding-bottom: 64px;
+}
+
+.introducao__container {
+    display: flex;
+    max-width: 1120px;
+    margin: auto;
+    margin-top: 64px;
+}
+
+.introducao__chamada {
+    padding: 0 24px;
+}
+
+.introducao__texto--overline {
+    font-size: 16px;
+    color: var(--verde-claro);
+    font-weight: 700;
+}
+
+.introducao__texto--headline {
+    font-size: 44px;
+    color: var(--verde-escuro);
+    margin: 1rem 0;
+    white-space: nowrap;
+}
+
+.introducao__texto--headline strong {
+    font-weight: 800;
+}
+
+.introducao__texto--description {
+    max-width: 445px;
+    line-height: 22px;
+    text-align: justify;
+    color: var(--verde-escuro);
+    font-weight: bold;
+}
+
+.introducao__botoes {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.introducao__botao {
+    border: 2px solid var(--verde-claro);
+    box-sizing: border-box;
+    width: 210px;
+    height: 72px;
+    border-radius: 10px;
+    font-weight: 900;
+    color: var(--branco);
+    background-color: var(--verde-claro);
+    transition: .6s ease all;
+    cursor: pointer;
+    line-height: 22px;
+}
+
+.introducao__botao:hover {
+    background-color: var(--verde-escuro);
+    border-color: var(--verde-escuro);
+}
+
+.introducao__botao:last-of-type {
+    background-color: transparent;
+    color: var(--verde-escuro);
+    font-weight: bold;
+    margin-left: 25px;
+}
+
+.introducao__botao:last-of-type:hover {
+    background-color: #e9e9e9;
+    border-color: var(--verde-claro);
+}
+
+.introducao__imagem {
+    margin-left: 170px;
+    position: relative;
+}
+
+.introducao__imagem::before {
+    content: '';
+    background: url(../../img/Ellipse\ 1.svg) no-repeat center / contain;
+    width: 780px;
+    height: 400px;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: -64px;
+    right: -40%;
+}
+
+@media screen and (max-width: 1023px) {
+    .introducao__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .introducao__imagem {
+        order: -1;
+        left: -104px;
+        margin-bottom: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .introducao__texto--overline {
+        font-size: 11px;
+    }
+
+    .introducao__texto--headline {
+        font-size: 24px;
+    }
+
+    .introducao__texto--description {
+        font-size: 13px;
+    }
+
+    .introducao__botoes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .introducao__botao {
+        width: 210px;
+        padding: 0 16px;
+    }
+
+    .introducao__botao:last-of-type {
+        margin-left: 0;
+        margin-top: 26px;
+    }
+
+    .introducao__imagem > img {
+        width: 200px;
+        height: 188px;
+    }
+
+    .introducao__imagem::before {
+        width: 370px;
+        height: 188px;
+        top: -40px;
+        right: -56%;
+    }
+}

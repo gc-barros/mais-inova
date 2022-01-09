@@ -1,0 +1,91 @@
+.secao__titulo {
+    font-size: 36px;
+    color: var(--verde-claro);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.secao__descricao {
+    max-width: 908px;
+    line-height: 22px;
+    text-align: center;
+    margin: auto;
+}
+
+.mercado {
+    padding: 0 24px;
+    padding-bottom: 80px;
+}
+
+.mercado__descricao {
+    max-width: 718px;
+    margin-bottom: 4rem;
+}
+
+.mercado__cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.mercado__card {
+    padding: 32px;
+    padding-bottom: 0;
+    border: 2px solid var(--verde-claro);
+    box-sizing: border-box;
+    border-radius: 20px;
+    max-width: 400px;
+    text-align: center;
+    line-height: 23px;
+    margin: 0 16px;
+    height: 256px;
+    transition: .6s ease all;
+    cursor: pointer;
+    margin-bottom: 32px;
+}
+
+.mercado__card--titulo {
+    font-size: 32px;
+    margin-bottom: 1.25rem;
+    font-weight: 700;
+    color: var(--verde-escuro);
+    transition: .3s ease-in all;
+}
+
+.mercado__card:hover {
+    background: var(--verde-claro);
+    box-shadow: 10px 10px 10px rgba(61, 61, 51, 0.22);
+    transform: scale(1.1);
+    color: var(--branco);
+}
+
+.mercado__card:hover .mercado__card--titulo {
+    color: var(--branco);
+}
+
+@media screen and (max-width: 767px) {
+    .secao__titulo {
+        font-size: 22px;
+        margin-bottom: 1.5rem;
+    }
+
+    .secao__descricao {
+        font-size: 13px;
+    }
+
+    .mercado__card {
+        font-size: 13px;
+        padding: 24px 16px;
+        height: auto;
+    }
+
+    .mercado__card--titulo {
+        font-size: 18px;
+    }
+
+    .mercado__descricao {
+        margin-bottom: 2rem;
+    }
+}
