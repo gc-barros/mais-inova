@@ -54,7 +54,7 @@
     transition: .3s ease-in all;
 }
 
-[data-anima].animate.mercado__card:hover {
+.mercado__card:hover {
     background: var(--verde-claro);
     box-shadow: 10px 10px 10px rgba(61, 61, 51, 0.22);
     transform: scale(1.1);
