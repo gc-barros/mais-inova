@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="assets/css/principal.css">
     <link rel="stylesheet" href="assets/css/inicio/perfis.css">
     <link rel="stylesheet" href="assets/css/botaoTopo.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
 </head>
 <body>
     <!-- Cabeçalho -->
@@ -90,31 +91,35 @@
         <button class="botao-topo" aria-label="Botão voltar ao topo" title="Voltar ao topo da página" data-scrollToTop><i class="ri-arrow-up-line"></i></button>
 
         <section class="mercado" id="mercado">
-            <h2 class="mercado__titulo secao__titulo">Conheça mais sobre o mercado</h2>
-            <p class="mercado__descricao secao__descricao">ESG é a sigla em inglês para "environmental, social and governance" (ambiental, social e governança, em português). Através dessa abordagem é possível ampliar a perspectiva de análise do negócio para além das métricas financeiras.</p>
+            <div data-anima="bottom">
+                <h2 class="mercado__titulo secao__titulo">Conheça mais sobre o mercado</h2>
+                <p class="mercado__descricao secao__descricao">ESG é a sigla em inglês para "environmental, social and governance" (ambiental, social e governança, em português). Através dessa abordagem é possível ampliar a perspectiva de análise do negócio para além das métricas financeiras.</p>
+            </div>
             <div class="mercado__cards">
-                <div class="mercado__card">
+                <div class="mercado__card" data-anima="bottom">
                     <h3 class="mercado__card--titulo">Environmental</h3>
                     <p class="mercado__card--descricao"><strong>Responsabilidade ambiental</strong><br>Prática da gestão de resíduos e de emissão de gases; uso de materiais certificados; fomento ao reflorestamento; incentivo a ações sustentáveis como a reciclagem.</p>
                 </div>
 
-                <div class="mercado__card">
+                <div class="mercado__card" data-anima="bottom">
                     <h3 class="mercado__card--titulo">Social</h3>
                     <p class="mercado__card--descricao"><strong>Responsabilidade social</strong><br>
                     Fomento à diversidade e à inclusão; parceira com ONG's; garantia de programas de apoio, desenvolvimento e capacitação aos colaboradores; promoção de campanhas de conscientização e incentivo a doações e trabalhos voluntários.</p>
                 </div>
 
-                <div class="mercado__card">
+                <div class="mercado__card" data-anima="bottom">
                     <h3 class="mercado__card--titulo">Governance</h3>
                     <p class="mercado__card--descricao"><strong>Responsabilidade ambiental</strong><br>
                     Transparência das relações e prestação de contas; combate à corrupção e crimes; incentivo à comunicação entre setores; fomento a melhoria da gestão; integridade nos processos.</p>
                 </div>
             </div>
-            <h2 class="secao__titulo esg__titulo">Por que pensar em ESG?</h2>
-            <p class="secao__descricao esg__descricao">ESG nas empresas é cada vez mais reconhecida por governos e por quem se interessa em agir social e ambientalmente. As medidas ESG promovem a diminuição de gastos, pois muitas delas reduzem custos com energia, materiais, máquinas e desperdícios. Ademais, a incorporação de medidas sustentáveis à estratégia e modelo de negócios das organizações beneficia as parcerias entre empresas no mundo inteiro.</p>
+            <div data-anima="bottom">
+                <h2 class="secao__titulo esg__titulo">Por que pensar em ESG?</h2>
+                <p class="secao__descricao esg__descricao">ESG nas empresas é cada vez mais reconhecida por governos e por quem se interessa em agir social e ambientalmente. As medidas ESG promovem a diminuição de gastos, pois muitas delas reduzem custos com energia, materiais, máquinas e desperdícios. Ademais, a incorporação de medidas sustentáveis à estratégia e modelo de negócios das organizações beneficia as parcerias entre empresas no mundo inteiro.</p>
+            </div>
         </section>
 
-        <section class="graficos">
+        <section class="graficos" data-anima="left">
             <div class="graficos__texto">
                 <h2 class="mercado__card--titulo graficos__titulo">Mercado ESG Nacional<br>Vista de gráfico</h2>
                 <p class="secao__descricao graficos__descricao">Um mapeamento realizado pela Associação Brasileira das Entidades dos Mercados Financeiro e de Capitais (Anbima) demonstrou um aumento significativo no ano de 2020 de empresas que se denominavam sustentáveis em relação ao ano anterior.</p>
@@ -135,7 +140,7 @@
             </div>
         </section>
 
-        <section class="principal carrossel__container carrossel__container--inicio" id="noticias">
+        <section class="principal carrossel__container carrossel__container--inicio" id="noticias" data-anima="bottom">
             <h3 class="noticias__destaque">Notícias em destaque</h3>
             <div class="content_principal">
                 <div class="principal__noticias">
@@ -193,12 +198,12 @@
             </div>
         </section>
 
-        <section class="qual-perfil" id="qualperfil">
+        <section class="qual-perfil" id="qualperfil" data-anima="left">
             <h2 class="secao__titulo">Qual seu perfil de investidor?</h2>
             <p class="secao__descricao perfil__descricao">Você sabe o seu tipo de investidor? Não sabe por onde começar? A gente te ajuda!</p>
         </section>
         <section id="perfis">
-            <div class="perfil">
+            <div class="perfil" data-anima="bottom">
                 <h3>O iniciante</h3>
                 <p class="frase-investidor">É mais conservador, preza por estabilidade, e quase não tolera riscos.</p>
                 <div class="caracteristicas">
@@ -219,7 +224,7 @@
                     <button class="saibamais-bottao" onclick="window.location.href = '/perfiliniciante.html'">Saiba mais</button>
                 </div>
             </div>
-            <div class="moderado">
+            <div class="moderado" data-anima="bottom">
                 <h3>O moderado</h3>
                 <p class="frase-investidor">Transita entre “o iniciante” e “o arrojado” e entende um pouco do mercado.</p>
                 <div class="caracteristicas">
@@ -240,7 +245,7 @@
                     <button class="saibamais-bottao" onclick="window.location.href = '/perfilmoderado.html'">Saiba mais</button>
                 </div>
             </div>
-            <div class="perfil">
+            <div class="perfil" data-anima="bottom">
                 <h3>O arrojado</h3>
                 <p class="frase-investidor">Seu objetivo é a rentabilidade a longo prazo, você já é acostumado com riscos..</p>
                 <div class="caracteristicas">
@@ -263,7 +268,7 @@
             </div>
         </section>
         
-        <section id="quizz">
+        <section id="quizz" data-anima="left">
             <h2 class="quizz-duvida">Ainda está com dúvida de qual o seu perfil?</h2>
             <p class="quizz-frase">Descubra gratuitamente o seu perfil de investidor.</p>
             <button class="quizz-botao" onclick="window.location.href = '/fazer-o-teste.html'">Fazer o teste</button>

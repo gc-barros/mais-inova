@@ -98,6 +98,7 @@
 
 .principal__card:hover {
     transform: scale(1.06);
+    box-shadow: 5px 5px 10px rgba(61, 61, 51, 0.12);
 }
 
 .principal__card img {
@@ -130,6 +131,7 @@
 
     .principal__card:hover {
         transform: none;
+        box-shadow: none;
     }
     
 }
