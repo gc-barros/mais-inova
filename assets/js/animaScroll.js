@@ -9,7 +9,7 @@ function animaScrollInit() {
     }
 
     function animaScroll() {
-        const windowMetade = window.innerHeight * 0.65;
+        const windowMetade = window.innerHeight * 0.75;
 
         target.forEach((element) => {
             const elementTop = element.getBoundingClientRect().top;
