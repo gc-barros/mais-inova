@@ -1,6 +1,7 @@
 .investimentos {
     margin: 104px 4px;
     padding-top: 80px;
+    margin-top: 3rem;
 }
 
 .investimentos__box {
@@ -133,6 +134,7 @@
 @media screen and (max-width: 768px) {
     .investimentos {
         margin-top: 64px;
+        padding-top: 0;
     }
 
     .investimentos__abas {

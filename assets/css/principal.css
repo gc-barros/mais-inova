@@ -4,6 +4,7 @@
     align-items: center;
     flex-direction: column;
     margin-top: 1rem;
+    padding-bottom: 5rem;
     gap: 8rem;
     background-color: #FCFCFC;
 }
@@ -58,14 +59,14 @@
     gap: 5rem;
     align-items: center;
     justify-content: center;
-
+    line-height: 22px;
 }
 
 .principal__informacoes div h4 {
     color: var(--verde-escuro);
     font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
 
 }
 
@@ -162,10 +163,10 @@
     .principal__informacoes div h4 {
         color: var(--verde-escuro);
         font-size: 1.5rem;
-        line-height: 2.5rem;
+        line-height: 2rem;
         font-weight: bold;
         margin: auto;
-        margin-bottom: 0.5rem;
+        margin-bottom: 1.5rem;
 
     }
 
